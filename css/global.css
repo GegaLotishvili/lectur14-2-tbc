@@ -142,8 +142,20 @@ a {
           box-sizing: border-box;
 }
 
+.s-1 .container, .s-3 .container, .s-2 .container, header .container {
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 1200px) {
+  .s-1 .container, .s-3 .container, .s-2 .container, header .container {
+    width: 90%;
+  }
+}
+
 header {
   height: 100px;
+  width: 100%;
   background-color: hotpink;
 }
 @media (max-width: 1200px) {
@@ -152,9 +164,6 @@ header {
   }
 }
 header .container {
-  max-width: 1180px;
-  width: 100%;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -165,11 +174,6 @@ header .container {
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
-}
-@media (max-width: 1200px) {
-  header .container {
-    width: 90%;
-  }
 }
 header .container .logo {
   font-size: 52px;
@@ -219,4 +223,51 @@ header .container .fa-bars {
   header .container .fa-bars {
     display: inline-block;
   }
+}
+
+.s-1 {
+  background-color: lightblue;
+  height: 700px;
+}
+.s-1 .container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  gap: 5px;
+}
+.s-1 .container .box {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(130, 166, 21);
+}
+
+h1 {
+  color: red;
+}
+
+h2 {
+  color: red;
+}
+
+h3 {
+  color: red;
+}
+
+h1,
+h2,
+h3 {
+  color: red;
 }/*# sourceMappingURL=global.css.map */

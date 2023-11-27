@@ -1,0 +1,33 @@
+.s-1 {
+    background-color: lightblue;
+    height: 700px;
+    .container {
+        height: 100%;
+        @extend %mycontainer;
+        @include myflex();
+        gap: 5px;
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: $hovercolor;
+        }
+    }
+}
+
+h1 {
+    color: red;
+}
+
+h2 {
+    color: red;
+}
+
+h3 {
+    color: red;
+}
+
+h1,
+h2,
+h3 {
+    color: red;
+}
